@@ -1,6 +1,6 @@
-Feature: Add pet
+Feature: Add User and Get User details
 
-  Scenario: Add User
+  Scenario: Add User API
     Given I want to create user with below details:
       | firstName | lastName | password | phone | username | email          |
       | test      | testlast | eewe     | 42343 | test01   | test@gmail.com |
@@ -17,4 +17,3 @@ Feature: Add pet
     When I get user details with username as "test01"
     Then I validate response has expected details
 
-#    Then I validate response has pet
